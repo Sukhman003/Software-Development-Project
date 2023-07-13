@@ -2,7 +2,7 @@
 # Overview: #
 This project is an Android weather application developed in Java using Android Studio. It utilizes the OpenWeatherAPI to retrieve weather data and provides users with real-time weather information for a given location. The app allows users to search for specific cities and displays the current weather conditions along with the forecast for the upcoming days.
 
-# Features:#
+# Features: #
 
 - [x] Current Weather Display: The app displays the current weather conditions, including temperature, humidity, wind speed, and weather description (e.g., sunny, cloudy, rainy).
 - [ ] 
@@ -35,7 +35,7 @@ Connect an Android device or start an emulator to run the application.
 Build and run the app from Android Studio, and it will be installed on the device/emulator.
 </p>
 
-# Usage:# 
+# Usage: # 
 
 Upon launching the app, users will be greeted with a search bar to enter the desired city.
 Users can enter the city name and tap on the search button to retrieve weather information.
@@ -44,39 +44,6 @@ Users can scroll down to view the weather forecast for the upcoming days.
 To switch between temperature units, users can access the settings or preferences menu within the app.
 Users can also allow the app to access their current location for location-based weather information by granting the necessary permissions.
 The app will handle errors gracefully and display appropriate messages if there are network issues or invalid search queries.
-# Readme: # 
-
-Weather Android App using OpenWeatherAPI
-This is an Android application that provides real-time weather information using the OpenWeatherAPI. The app allows users to search for specific cities and displays the current weather conditions along with the forecast for the upcoming days.
-
-Features
-Current weather display: Temperature, humidity, wind speed, and weather description.
-Forecast display: Weather forecast for the upcoming days.
-Search functionality: Search for weather information for specific cities.
-Location-based weather: Retrieve weather data based on the user's current location.
-Unit selection: Choose between Celsius or Fahrenheit for temperature display.
-Error handling: Gracefully handle network issues and invalid search queries.
-Technologies and APIs Used
-Java
-Android Studio
-OpenWeatherAPI
-Google Play Services
-Retrofit
-JSON
-Installation
-Clone the repository: git clone [[https://github.com/RahulM4/WeatherApp-Android.git](https://github.com/RahulM4/WeatherApp-Android)]
-Open the project in Android Studio.
-Obtain an API key from the OpenWeatherAPI website.
-Replace the placeholder API key in the code with your generated API key.
-Build and run the app on an Android device or emulator.
-Usage
-Launch the app on your Android device or emulator.
-Enter a city name in the search bar and tap the search button.
-The current weather conditions for the specified city will be displayed.
-Scroll down to view the weather forecast for the upcoming days.
-Change the temperature units in the settings or preferences menu.
-Grant necessary permissions to allow the app to access your current location for location-based weather information.
-Note: Internet connectivity is required for the app to retrieve weather data.
 
 Contributing
 Contributions are welcome! If you find any bugs or want to add new features, please open an issue or submit a pull request.
