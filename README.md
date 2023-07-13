@@ -57,7 +57,7 @@ Google Play Services
 Retrofit
 JSON
 Installation
-Clone the repository: git clone https://github.com/your-username/weather-android-app.git
+Clone the repository: git clone [[https://github.com/RahulM4/WeatherApp-Android.git](https://github.com/RahulM4/WeatherApp-Android)]
 Open the project in Android Studio.
 Obtain an API key from the OpenWeatherAPI website.
 Replace the placeholder API key in the code with your generated API key.
