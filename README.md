@@ -23,8 +23,7 @@ Technologies and APIs Used:
 Setup and Installation:
 
 # Installation #
-- [x] Clone the repository or download the project source code.
-      `https://github.com/RahulM4/WeatherApp-Android.git`
+- [x] Clone the repository or download the project source code
       
 <p> Open Android Studio and select "Open an existing Android Studio project."
 Navigate to the project directory and select the project.
