@@ -197,7 +197,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     }
 
 
-
     private String getCurrentTime() {
         LocalDateTime dateTime = LocalDateTime.now();
 

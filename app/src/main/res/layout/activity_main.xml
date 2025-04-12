@@ -17,8 +17,6 @@
     <!-- Set default to Celsius -->
 
 
-
-
     <RelativeLayout
         android:id="@+id/RLHome"
         android:layout_width="match_parent"
