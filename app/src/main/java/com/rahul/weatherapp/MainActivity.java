@@ -172,13 +172,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             public void onResponse(JSONObject response) {
                 try {
                     if(response.getString("cod").equals("404")){
-                        Toast.makeText(MainActivity.this, "Please enter correct city name", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Please enter correct city", Toast.LENGTH_LONG).show();
                     }else {
                         textLastTime.setText(getCurrentTime());
                         lon = response.getJSONObject("coord").getDouble("lon");
                         lat = response.getJSONObject("coord").getDouble("lat");
                         getCurrentWeather(lat, lon);
                         getForecastWeather(lat, lon);
+                        Toast.makeText(MainActivity.this, "Updated", Toast.LENGTH_LONG).show();
                     }
                 } catch (Exception ex) {
                     Toast.makeText(MainActivity.this, "Please enter correct city name", Toast.LENGTH_LONG).show();
@@ -187,11 +188,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("Fetch Error","city not found");
+
+                Toast.makeText(MainActivity.this, "CITY NOT FOUND", Toast.LENGTH_LONG).show();
             }
         });
         requestQueue.add(jsonObjectRequest);
     }
+
+
 
     private String getCurrentTime() {
         LocalDateTime dateTime = LocalDateTime.now();
@@ -237,7 +241,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("Fetch Error",error.getMessage());
+
+                Toast.makeText(MainActivity.this, "ERROR", Toast.LENGTH_LONG).show();
             }
         });
         requestQueue.add(jsonObjectRequest);
@@ -265,7 +270,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     .getDouble("speed");
             textWindSpeed.setText(""+wSpeed+"Km/h");
         }catch (Exception e){
-            Log.d("Update Res",e.getMessage());
+            Toast.makeText(MainActivity.this, "ERROR", Toast.LENGTH_LONG).show();
         }
 
     }
